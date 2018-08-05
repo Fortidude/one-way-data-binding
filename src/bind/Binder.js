@@ -4,6 +4,9 @@
  *
  */
 class Binder {
+    bind = (module, template) => {
+
+    }
 }
 
 export default Binder;
