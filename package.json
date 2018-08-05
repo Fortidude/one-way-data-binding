@@ -1,0 +1,18 @@
+{
+  "name": "one-way-binder",
+  "version": "1.0.0",
+  "description": "Recruitment task for a job",
+  "author": "Artur Schroeder",
+  "scripts": {
+    "start": "webpack --watch",
+    "server": "webpack-dev-server"
+  },
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2017": "^1.6.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "webpack": "^3.8.1",
+    "webpack-dev-server": "^2.9.5"
+  }
+}
