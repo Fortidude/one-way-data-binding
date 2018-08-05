@@ -8,8 +8,9 @@ const observerInstance = new Observer();
 observerInstance.callback = binder.update;
 
 /**
- * I tryied to test it, using TDD but i have never working with JSDOM or unitTest with DOM manipulation.
- * I left it just to not waste time over this task.
+ * I tried to test it, using TDD but i have never tested DOM manipulation so far.
+ * 'JSDOM' and 'Jest' are great to test that, but I had some problems,
+ * so left this one just to not spend more time over this task.
  */
 test("test bind", () => {});
 test("test updated bind", () => {});

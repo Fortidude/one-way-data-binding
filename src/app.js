@@ -4,7 +4,7 @@ import Observer from './observer/Observer';
 let model = {
     label: 0,
     property: 'property value',
-    url: 'http://example.url',
+    url: '',
     nested: {
         x: {
             property: 'test nested property'
