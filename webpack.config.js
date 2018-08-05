@@ -11,7 +11,6 @@ module.exports = {
         path: path.resolve(__dirname, 'js'),
         filename: 'app.js'
     },
-    watch: true,
     module: {
         loaders: [
             {

@@ -4,7 +4,8 @@
   "description": "Recruitment task for a job",
   "author": "Artur Schroeder",
   "scripts": {
-    "start": "webpack --watch",
+    "build": "webpack",
+    "watch": "webpack --watch",
     "server": "webpack-dev-server",
     "test": "jest"
   },
