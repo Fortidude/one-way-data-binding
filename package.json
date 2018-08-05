@@ -1,0 +1,29 @@
+{
+  "name": "one-way-binder",
+  "version": "1.0.0",
+  "description": "Recruitment task for a job",
+  "author": "Artur Schroeder",
+  "scripts": {
+    "build": "webpack",
+    "watch": "webpack --watch",
+    "server": "webpack-dev-server",
+    "test": "jest"
+  },
+  "jest": {
+    "testURL": "http://localhost"
+  },
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-jest": "^23.4.2",
+    "babel-loader": "^7.1.2",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-es2017": "^1.6.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "jsdom": "^11.12.0",
+    "webpack": "^3.8.1",
+    "webpack-dev-server": "^2.9.5"
+  },
+  "devDependencies": {
+    "jest": "^23.4.2"
+  }
+}

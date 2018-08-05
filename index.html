@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>One-way data binding</title>
+    <meta name="author" content="Artur Schroeder">
+    <meta charset="UTF-8">
+</head>
+<body>
+
+    <p data-bind="label" data-bind-title="property"></p>
+    <a data-bind="url" data-bind-href="url"></a>
+
+    <section>
+        <a data-bind="nested.x.property"></a>
+    </section>
+</body>
+
+<script src="js/app.js" charset="utf-8"></script>
+</html>
