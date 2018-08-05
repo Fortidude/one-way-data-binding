@@ -12,9 +12,6 @@ module.exports = {
         filename: 'app.js'
     },
     watch: true,
-    devServer: {
-        watchContentBase: true
-    },
     module: {
         loaders: [
             {
