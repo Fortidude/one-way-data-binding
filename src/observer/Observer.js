@@ -6,9 +6,7 @@
  *
  */
 class Observer {
-    callback = () => {
-        console.log('callback');
-    };
+    callback = () => {};
 
     observe = (model) => {
         return new Proxy(model, {get: this.get, set: this.set});
