@@ -5,6 +5,11 @@ let model = {
     label: 0,
     property: 'property value',
     url: 'http://example.url',
+    nested: {
+        x: {
+            property: 'test nested property'
+        }
+    }
 };
 
 const dataBinder = new Binder();

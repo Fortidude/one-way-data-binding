@@ -35,10 +35,7 @@ class Binder {
     _tryToBindHTML = (model) => {
         let nodes = this._template.querySelectorAll('[data-bind]');
         nodes.forEach(node => {
-            const propertyValueToBind = this._getPropertyValueToBind(node, 'data-bind');
-            if (propertyValueToBind in model) {
-                node.innerText = model[propertyValueToBind];
-            }
+            node.innerText = this._getPropertyValueToBind(node, 'data-bind');
         })
     };
 
@@ -47,11 +44,10 @@ class Binder {
             let nodes = this._template.querySelectorAll(`[data-bind-${attribute}]`);
 
             nodes.forEach(node => {
-                const propertyValueToBind = this._getPropertyValueToBind(node, `data-bind-${attribute}`);
+                const valueToBind = this._getPropertyValueToBind(node, `data-bind-${attribute}`);
                 const attributeName = attribute.replace('data-bind', '');
-                if (propertyValueToBind in model) {
-                    node.setAttribute(attributeName, model[propertyValueToBind]);
-                }
+
+                node.setAttribute(attributeName, valueToBind);
             })
         })
     };
@@ -62,7 +58,13 @@ class Binder {
                 return attribute.nodeName === propertyName;
             });
 
-        return node.attributes[index].value;
+        return this._followPath(node.attributes[index].value);
+    }
+
+    _followPath = (path) => {
+        return path.split(".").reduce((prev, curr) => {
+            return prev && prev[curr];
+        }, this._model);
     }
 }
 
