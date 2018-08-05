@@ -1,8 +1,9 @@
 {
-  "name": "one-way-binder",
+  "name": "one-way-data-binding",
   "version": "1.0.0",
   "description": "Recruitment task for a job",
   "author": "Artur Schroeder",
+  "homepage": "https://github.com/Fortidude/one-way-data-binding#readme",
   "scripts": {
     "build": "webpack",
     "watch": "webpack --watch",
